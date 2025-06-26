@@ -65,6 +65,10 @@ export default {
         "vintage-sage": "#9CAF88",
         "vintage-cream": "#F5F5DC",
         "vintage-moss": "#6B8E23",
+        // Новая винтажная палитра по референсу
+        "vintage-dark": "#3D2F2A",
+        "vintage-warm": "#8B6F47",
+        "vintage-light": "#F4E4BC",
       },
       fontFamily: {
         caveat: ["Caveat", "cursive"],

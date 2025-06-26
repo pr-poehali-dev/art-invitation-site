@@ -98,4 +98,13 @@
     );
     pointer-events: none;
   }
+
+  .vintage-frame-dark {
+    border: 3px solid rgba(244, 228, 188, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .sepia {
+    filter: sepia(0.3) contrast(1.1);
+  }
 }

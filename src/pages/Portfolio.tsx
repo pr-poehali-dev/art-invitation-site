@@ -4,181 +4,109 @@ import Icon from "@/components/ui/icon";
 const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const portfolioItems = [
-    {
-      id: 1,
-      title: "Lunch Break",
-      image:
-        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
-      category: "Натюрморт",
-    },
-    {
-      id: 2,
-      title: "Морской пейзаж",
-      image:
-        "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&h=300&fit=crop",
-      category: "Пейзаж",
-    },
-    {
-      id: 3,
-      title: "Домашний уют",
-      image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
-      category: "Интерьер",
-    },
-    {
-      id: 4,
-      title: "Утренний кофе",
-      image:
-        "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&h=300&fit=crop",
-      category: "Натюрморт",
-    },
-    {
-      id: 5,
-      title: "Осенние краски",
-      image:
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop",
-      category: "Природа",
-    },
-    {
-      id: 6,
-      title: "Домашний питомец",
-      image:
-        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop",
-      category: "Портрет",
-    },
-    {
-      id: 7,
-      title: "Вязаные носки",
-      image:
-        "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=300&fit=crop",
-      category: "Текстиль",
-    },
-    {
-      id: 8,
-      title: "Винтажный блокнот",
-      image:
-        "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
-      category: "Винтаж",
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-vintage-sage">
-      {/* Первая секция - Карта времени */}
-      <section className="relative py-20 px-6 bg-vintage-forest text-vintage-cream">
-        <div className="absolute inset-0 opacity-10">
-          <div
-            className="w-full h-full bg-cover bg-center"
-            style={{
-              backgroundImage: `url(${encodeURI("https://cdn.poehali.dev/files/6133ea03-b7a9-4969-8191-17ff304d2b6c.png")})`,
-            }}
-          />
-        </div>
-
-        <div className="relative max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="font-serif text-4xl md:text-5xl font-light mb-8 leading-tight">
-                segodnya
-              </h1>
-              <div className="vintage-line mb-6"></div>
-              <p className="text-lg leading-relaxed opacity-90">
-                а тут интерес нужно
-                <br />
-                вызвать у тех кто
-                <br />
-                пролистались старые
-                <br />
-                мелочишки не работают, а ты в<br />
-                пространстве.
-              </p>
+    <div className="min-h-screen bg-vintage-warm">
+      {/* Первая секция - рука/искусство */}
+      <section className="h-screen flex items-center bg-vintage-dark text-vintage-light px-8">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center w-full">
+          <div className="flex justify-center">
+            <div className="vintage-frame-dark p-8 bg-black/20 rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1594736797933-d0861ba1d9be?w=500&h=600&fit=crop"
+                alt="Vintage hand sculpture"
+                className="w-full max-w-md h-auto object-cover rounded-lg grayscale"
+              />
             </div>
+          </div>
 
-            <div className="text-right">
-              <h2 className="font-serif text-3xl md:text-4xl font-light mb-8">
-                vchera
-              </h2>
-              <div className="vintage-line ml-auto mb-6"></div>
-              <p className="text-lg leading-relaxed opacity-90">
-                тут можно делать шаблонные ролики,
-                <br />
-                вылизывать сторис "доброе утро",
-                <br />
-                красоточить и чувствовать себя
-                <br />
-                супер.
-              </p>
+          <div className="space-y-6">
+            <h1 className="font-serif text-4xl md:text-5xl font-light leading-tight">
+              "а можем оно
+              <br />
+              надо вообще?"
+            </h1>
+            <p className="text-lg leading-relaxed opacity-90 max-w-lg">
+              мы не готов изменить цель взгляд в она есличность таких, что
+              настаним за становление заказ. настроены на так в каждом цвете,
+              поглядывать в для том. более нами позволяет нами помощи их были бы
+              возможно своё точным.
+            </p>
+            <p className="text-sm italic opacity-70">время поиска и наследие</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Вторая секция - письмо/общение */}
+      <section className="min-h-screen flex items-center bg-vintage-light text-vintage-dark px-8 py-20">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-4xl md:text-5xl font-light mb-8">
+              собираем кусочки
+              <br />
+              общения вместе
+            </h2>
+            <p className="text-lg leading-relaxed max-w-2xl mx-auto opacity-80">
+              ваша участие в с людьми всегда собрать ваше внимание в каждый
+              проект не поделился одной уважение в беспечт при проведает у будет
+              такнть прикасаться к своей каждый практика.
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="vintage-card bg-white p-8 rounded-lg shadow-vintage max-w-md">
+              <div className="border-2 border-vintage-sage p-6 rounded">
+                <img
+                  src="https://images.unsplash.com/photo-1586197280484-c7c3da355b86?w=400&h=250&fit=crop"
+                  alt="Vintage letter"
+                  className="w-full h-48 object-cover rounded mb-4 sepia"
+                />
+                <p className="font-serif text-center text-vintage-dark/70 italic">
+                  каждое письмо — история
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Вторая секция - Портфолио */}
-      <section className="py-20 px-6 bg-vintage-cream">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-light text-vintage-forest mb-4">
-              trend na
-              <span className="italic font-light">iskrennost'</span>
+      {/* Третья секция - стиль/философия */}
+      <section className="min-h-screen flex items-center bg-vintage-sage text-vintage-dark px-8 py-20">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center w-full">
+          <div className="space-y-8">
+            <h2 className="font-serif text-4xl md:text-5xl font-light leading-tight">
+              главное — найдите свой стиль
+              <br />
+              <span className="text-3xl opacity-80">
+                реальная предлагк, не увлекайтесь
+                <br />
+                в то, что работает у всех, у вас
+                <br />
+                это может не работать.
+              </span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {portfolioItems.map((item) => (
-              <div
-                key={item.id}
-                className="group cursor-pointer vintage-card"
-                onClick={() => setSelectedImage(item.image)}
-              >
-                <div className="aspect-square bg-vintage-sage/20 rounded-lg overflow-hidden shadow-vintage">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="mt-3 text-center">
-                  <h3 className="font-serif text-sm text-vintage-forest/80">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs text-vintage-forest/60 mt-1">
-                    {item.category}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Третья секция - Философия */}
-      <section className="py-20 px-6 bg-vintage-sage/30">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="font-serif text-4xl md:text-5xl font-light text-vintage-forest mb-8 leading-tight">
-                novaya iskrennost' —<br />
-                <span className="italic font-light text-3xl">
-                  shag v proshloe
-                </span>
-              </h2>
-
-              <p className="text-vintage-forest/80 leading-relaxed mb-8">
-                возвращаемся назад, где не было
-                <br />
-                фальши и притворства, искренность
-                <br />
-                обыденная жизнь, все старое и забытое.
-              </p>
-            </div>
-
-            <div className="flex justify-center">
-              <div className="vintage-frame">
+          <div className="flex justify-center">
+            <div className="grid grid-cols-2 gap-4 max-w-md">
+              <div className="vintage-card bg-white/80 p-4 rounded-lg shadow-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop"
-                  alt="vintage portrait"
-                  className="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=200&h=200&fit=crop"
+                  alt="Vintage notebook"
+                  className="w-full h-32 object-cover rounded sepia"
+                />
+              </div>
+              <div className="vintage-card bg-white/80 p-4 rounded-lg shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=200&h=200&fit=crop"
+                  alt="Vintage teacup"
+                  className="w-full h-32 object-cover rounded sepia"
+                />
+              </div>
+              <div className="vintage-card bg-white/80 p-4 rounded-lg shadow-sm col-span-2">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=150&fit=crop"
+                  alt="Vintage portrait"
+                  className="w-full h-24 object-cover rounded sepia"
                 />
               </div>
             </div>
@@ -195,7 +123,7 @@ const Portfolio = () => {
           <div className="relative max-w-4xl w-full">
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-vintage-cream transition-colors"
+              className="absolute -top-12 right-0 text-white hover:text-vintage-light transition-colors"
             >
               <Icon name="X" size={32} />
             </button>
