@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "@/pages/Home";
+import Index from "@/pages/Index";
 import Portfolio from "@/pages/Portfolio";
 import NotFound from "@/pages/NotFound";
 import { Toaster } from "@/components/ui/sonner";
@@ -14,7 +14,7 @@ const App = () => (
       <Toaster />
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Index />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
