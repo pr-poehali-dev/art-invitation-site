@@ -60,6 +60,11 @@ export default {
         "art-pink": "#FFDEE2",
         "art-brown": "#8B4513",
         "art-sage": "#F2FCE2",
+        // Винтажная палитра
+        "vintage-forest": "#2F4F4F",
+        "vintage-sage": "#9CAF88",
+        "vintage-cream": "#F5F5DC",
+        "vintage-moss": "#6B8E23",
       },
       fontFamily: {
         caveat: ["Caveat", "cursive"],

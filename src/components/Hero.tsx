@@ -89,12 +89,22 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-8 animate-bounce">
+        <div className="mt-8">
           <Icon
             name="ChevronDown"
             size={32}
             className="text-art-orange mx-auto"
           />
+        </div>
+
+        <div className="mt-8">
+          <a
+            href="/portfolio"
+            className="inline-flex items-center gap-2 bg-art-orange/20 hover:bg-art-orange/30 text-art-brown px-6 py-3 rounded-full transition-colors font-montserrat"
+          >
+            <Icon name="Eye" size={20} />
+            Посмотреть портфолио
+          </a>
         </div>
       </div>
     </section>
